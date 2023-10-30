@@ -15,7 +15,7 @@ mongoose.connect(
 app.get("/getUsers", async (req, res) => {
   try {
     const response = await UserModel.find({});
-    res.status(200).json(response)
+    res.status(200).json(response);
   } catch (error) {
     res.status(404).json({ error: error.message });
   }
