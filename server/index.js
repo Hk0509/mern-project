@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://himanshu:himanshu@cluster0.laqcmte.mongodb.net/merntutorial"
+  "mongodb+srv://<username>:<password>@cluster0.laqcmte.mongodb.net/merntutorial"
 );
 
 app.get("/getUsers", async (req, res) => {
